@@ -7,7 +7,7 @@ var localDate = thisDay.toLocaleDateString();
 var localTime = thisDay.toLocaleTimeString();
 
 document.getElementById("currentTime").innerHTML=
-"<span>"+ localDate + "</span><span>" + localTime + "</span>";
+"<span>"+ localDate + "</span>&nbsp;<span>" + localTime + "</span>";
 /* execute the function to run and display the countdown clock */
 var christmasDate = nextChristmas(thisDay);
 christmasDate.setHours(21);
