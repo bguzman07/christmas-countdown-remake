@@ -19,30 +19,47 @@
     <script src="./script/countdown.js" defer ></script>
 </head>
 
+<!-- Body -->
+
+<div class="alert alert-danger alert-dismissible fade show z-1 position-absolute p-5" role="alert">
+    <strong>Only 35 days til Christmas!</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
 <body class="container">
-    <header class="row text-center text-white align-middle" style="font-family: 'Notable', sans-serif;">
-        <h1>It's Time!</h1>
-    </header>
 
-    <div class="row text-center bg-success text-white" id="CountDown" style="font-family: Notable;">
-        <div class="col-2 offset-md-2"><span id="dLeft">58</span><br />Days</div>
-        <div class="col-2"><span id="hLeft">10</span><br />Hrs</div>
-        <div class="col-2"><span id="mLeft">14</span><br />Mins</div>
-        <div class="col-2"><span id="sLeft">48</span><br />Secs</div>
+    <!-- Header -->
+    <div class="row" id="header-row">
+        <div class="col text-center text-white align-middle" style="font-family: 'Notable', sans-serif;">
+            <p class="fs-6 opacity-0 m-0">extra space</p>
+            <h1 class="fs-1">It's Time!</h1>
+            <p class="fs-6 opacity-0 m-0">extra space</p>
+        </div>
     </div>
 
+    <!-- Countdown Timer -->
+    <div class="row text-center bg-success text-white p-2 justify-content-center" id="CountDown" style="font-family: Notable;">
+        <div class="col-xs col-md-1"><span id="dLeft">58</span><br />Days</div>
+        <div class="col-xs col-md-1"><span id="hLeft">10</span><br />Hrs</div>
+        <div class="col-xs col-md-1"><span id="mLeft">14</span><br />Mins</div>
+        <div class="col-xs col-md-1"><span id="sLeft">48</span><br />Secs</div>
+    </div>
+
+    <!-- Container for Navigation and Main Text -->
     <section class="row">
+
+        <!-- Navigation Column -->
         <nav class="col-2 bg-secondary-subtle border border-danger text-center" style="font-family: Kanit;">
-            <div class="row p-3" id=""><a href="#CountDown">Christmas CountDown</a></div>
-            <div class="row p-3"><a href="#par1">Christmas is Almost Here!</a></div>
-            <div class="row p-3"><a href="#par2">The Joys of Christmas Time</a></div>
-            <div class="row p-3"><a href="#par3">How You Can Be Involved During Christmas</a></div>
+            <div class="row p-3"><a href="#CountDown" class="link-secondary">Christmas CountDown</a></div>
+            <div class="row p-3"><a href="#par1" class="link-secondary">Christmas is Almost Here!</a></div>
+            <div class="row p-3"><a href="#par2" class="link-secondary">The Joys of Christmas Time</a></div>
+            <div class="row p-3"><a href="#par3" class="link-secondary">How You Can Be Involved During Christmas</a></div>
         </nav>
 
+        <!-- Main Text -->
         <section class="col-10" id="main">
-            <section id="row" style="height: auto;" id="par1">
-                <img src="./images/pic1.jpg" alt="" class="img-fluid float-end">
+            <section id="row" style="height: auto;">
+                <img src="./images/pic1.jpg" alt="" class="img-fluid float-end" id="par1">
                 <h3>Christmas is Almost Here!</h3>
                 <p> Christmas is one of the most beloved holidays of 
                     the year. It’s a time when we can gather with our loved ones and 
@@ -97,14 +114,12 @@
         </section>
     </section>
 
-    <footer class="row bg-danger text-white text-center justify-content-center" style="font-family: Notable, sans-serif;">
-        <div class="col-3">
-            <p>Have a Merry Christmas!</p>
-        </div>
-        <div class="col-3">
-            <div id="currentTime"><span>11/3/2017</span><span>2:45:12 p.m.</span></div>
-        </div>
+    <!-- Footer -->
+    <footer class="row bg-danger text-white text-center" style="font-family: Notable, sans-serif;">
+            <p class="m-1 mb-0">Have a Merry Christmas!</p>
+            <div id="currentTime" class="m-1"><span>11/3/2017</span><span>2:45:12 p.m.</span></div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

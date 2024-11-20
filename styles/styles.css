@@ -1,15 +1,16 @@
 
 
 /* Header Styles */
-h1 {
+#header-row {
     background-image: url("../images/christmas_background.jpg");
 }
+
 
 #main {
     padding: 1em;
 }
 
-#par1, #par2, #par3 {
+#par2, #par3 {
     padding-bottom: 1em;
     padding-top: 1em;
 }
