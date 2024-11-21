@@ -19,26 +19,31 @@
     <script src="./script/countdown.js" defer ></script>
 </head>
 
+
+
 <!-- Body -->
-
-<div class="alert alert-danger alert-dismissible fade show z-1 position-absolute p-5" role="alert">
-    <strong>Only 35 days til Christmas!</strong>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-
 <body class="container">
 
+    
+    <!-- Popup Alert -->
+    <div class="alert alert-danger alert-dismissible fade show z-1 position-absolute p-5 top-50 
+                start-50 translate-middle border-3 border-danger rounded-4 shadow-lg" role="alert">
+        <h1><strong>Only <span id="alert">40</span> more days!</strong></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    
+
     <!-- Header -->
-    <div class="row" id="header-row">
+    <div class="row rounded-top-4 mt-1 shadow" id="header-row">
         <div class="col text-center text-white align-middle" style="font-family: 'Notable', sans-serif;">
             <p class="fs-6 opacity-0 m-0">extra space</p>
-            <h1 class="fs-1">It's Time!</h1>
+            <h1 class="fs-1 shadow">It's Time!</h1>
             <p class="fs-6 opacity-0 m-0">extra space</p>
         </div>
     </div>
 
     <!-- Countdown Timer -->
-    <div class="row text-center bg-success text-white p-2 justify-content-center" id="CountDown" style="font-family: Notable;">
+    <div class="row text-center bg-success text-white p-2 justify-content-center rounded-bottom-4 mb-2 shadow" id="CountDown" style="font-family: Notable;">
         <div class="col-xs col-md-1"><span id="dLeft">58</span><br />Days</div>
         <div class="col-xs col-md-1"><span id="hLeft">10</span><br />Hrs</div>
         <div class="col-xs col-md-1"><span id="mLeft">14</span><br />Mins</div>
@@ -49,15 +54,30 @@
     <section class="row">
 
         <!-- Navigation Column -->
-        <nav class="col-2 bg-secondary-subtle border border-danger text-center" style="font-family: Kanit;">
-            <div class="row p-3"><a href="#CountDown" class="link-secondary">Christmas CountDown</a></div>
-            <div class="row p-3"><a href="#par1" class="link-secondary">Christmas is Almost Here!</a></div>
-            <div class="row p-3"><a href="#par2" class="link-secondary">The Joys of Christmas Time</a></div>
-            <div class="row p-3"><a href="#par3" class="link-secondary">How You Can Be Involved During Christmas</a></div>
-        </nav>
+        <div class="col-2">
+            <nav class="row navbar bg-secondary-subtle border border-2 border-opacity-50 border-danger 
+            rounded-top-4 border-bottom-0">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </nav>
+            
+            <div class="row bg-secondary-subtle border border-2 border-opacity-50 border-danger 
+            rounded-bottom-4 border-top-0">
+                <nav class="col collapse.show text-center" style="font-family: Kanit;" id="navbarToggleExternalContent">
+                    <div class="row p-3"><a href="#CountDown" class="link-secondary fs-5">Christmas Count Down</a></div>
+                    <div class="row p-3"><a href="#par1" class="link-secondary fs-5">Christmas is Almost Here!</a></div>
+                    <div class="row p-3"><a href="#par2" class="link-secondary fs-5">The Joys of Christmas Time</a></div>
+                    <div class="row p-3"><a href="#par3" class="link-secondary fs-5">How You Can Be Involved During Christmas</a></div>
+                </nav>
+            </div>
 
+        </div>
+    
         <!-- Main Text -->
-        <section class="col-10" id="main">
+        <section class="col" id="main">
             <section id="row" style="height: auto;">
                 <img src="./images/pic1.jpg" alt="" class="img-fluid float-end" id="par1">
                 <h3>Christmas is Almost Here!</h3>
@@ -115,7 +135,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="row bg-danger text-white text-center" style="font-family: Notable, sans-serif;">
+    <footer class="row bg-danger text-white text-center rounded-4 mt-2 mb-1 shadow" style="font-family: Notable, sans-serif;">
             <p class="m-1 mb-0">Have a Merry Christmas!</p>
             <div id="currentTime" class="m-1"><span>11/3/2017</span><span>2:45:12 p.m.</span></div>
     </footer>

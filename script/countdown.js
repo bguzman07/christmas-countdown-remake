@@ -21,6 +21,8 @@ var secs = (mins - Math.floor(mins)) * 60;
    document.getElementById("hLeft").textContent = Math.floor(hrs);
    document.getElementById("mLeft").textContent = Math.floor(mins);
    document.getElementById("sLeft").textContent = Math.floor(secs);
+
+   document.getElementById("alert").textContent = Math.floor(days);
 }
   function nextChristmas(currentDate) {
    var cYear = currentDate.getFullYear();
